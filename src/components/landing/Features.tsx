@@ -24,13 +24,13 @@ export function Features() {
     <section id="features" className="relative py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-2xl mb-16">
-          <p className="text-xs uppercase tracking-[0.2em] text-[var(--gold)] mb-3">Capabilities</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[var(--gold)] mb-3">Por que JusMind</p>
           <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
-            Engenharia jurídica de <span className="text-gradient-gold italic">elite</span>, automatizada.
+            Os problemas que <span className="text-gradient-gold italic">resolvemos</span> por você.
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((f, i) => (
             <motion.div
               key={f.title}
