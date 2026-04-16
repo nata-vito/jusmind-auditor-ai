@@ -23,16 +23,15 @@ export function Hero() {
               <span>Senior Contract Auditor · Powered by AI</span>
             </div>
 
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight">
-              Auditoria Contratual com{" "}
-              <span className="text-gradient-gold italic">Precisão de Big Law</span>.
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight">
+              Pare de assinar riscos <span className="text-gradient-gold italic">no escuro</span>.
               <br />
-              <span className="text-muted-foreground">Em Segundos.</span>
+              <span className="text-muted-foreground">O que você está deixando passar nos seus contratos?</span>
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-              A inteligência artificial que lê, analisa e expõe os riscos ocultos dos seus contratos
-              <span className="text-foreground"> antes que você assine</span>. Proteja seu negócio com o JusMind.
+              A maioria dos prejuízos jurídicos nasce de cláusulas mal lidas. O JusMind audita seus
+              documentos em segundos e <span className="text-foreground">expõe o que realmente importa</span> antes que você assine.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
