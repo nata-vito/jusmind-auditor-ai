@@ -1,26 +1,41 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "@/components/ui/sonner";
+import { Navbar } from "@/components/landing/Navbar";
+import { Hero } from "@/components/landing/Hero";
+import { Features } from "@/components/landing/Features";
+import { HowItWorks } from "@/components/landing/HowItWorks";
+import { LeadForm } from "@/components/landing/LeadForm";
+import { Footer } from "@/components/landing/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "JusMind — Auditoria Contratual com IA. Em Segundos." },
+      {
+        name: "description",
+        content:
+          "JusMind é a IA que audita contratos com precisão de Big Law: lê tudo, sinaliza riscos e detecta omissões antes que você assine.",
+      },
+      { property: "og:title", content: "JusMind — Auditoria Contratual com IA" },
+      {
+        property: "og:description",
+        content: "Senior Contract Auditor powered by AI. Beta fechada em andamento.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="dark min-h-screen bg-background text-foreground">
+      <Navbar />
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <LeadForm />
+      <Footer />
+      <Toaster theme="dark" position="top-center" />
+    </main>
+  );
 }
