@@ -1,26 +1,21 @@
 import { motion } from "framer-motion";
-import { Zap, TrafficCone, SearchCheck, FileBarChart } from "lucide-react";
+import { FileWarning, Clock, ShieldCheck } from "lucide-react";
 
 const features = [
   {
-    icon: Zap,
-    title: "Leitura Integral",
-    desc: 'Esqueça o "skimming". O JusMind lê todas as páginas, anexos e letras miúdas.',
+    icon: FileWarning,
+    title: "Chega de letras miúdas",
+    desc: "Detectamos armadilhas escondidas em contratos de 50+ páginas — nada passa despercebido.",
   },
   {
-    icon: TrafficCone,
-    title: "Matriz de Risco",
-    desc: "Identificação instantânea de Deal Breakers (Alto), Pontos de Atenção (Médio) e Cláusulas Padrão.",
+    icon: Clock,
+    title: "Economize horas de revisão",
+    desc: "Vá direto aos pontos críticos sem precisar ler tudo palavra por palavra.",
   },
   {
-    icon: SearchCheck,
-    title: "Detector de Omissões",
-    desc: "Descubra não apenas o que está ruim, mas o que falta no contrato para blindar sua empresa.",
-  },
-  {
-    icon: FileBarChart,
-    title: "Relatório Executivo",
-    desc: 'Saída padronizada, direta ao ponto, focada no negócio — não em "juridiquês".',
+    icon: ShieldCheck,
+    title: "Segurança para o CEO",
+    desc: "Identificamos omissões graves (como falta de multa ou cláusula de rescisão) que podem custar caro.",
   },
 ];
 
