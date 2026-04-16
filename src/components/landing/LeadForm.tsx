@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Lock, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Lock, Sparkles, ExternalLink } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+
+// TODO: substituir pelo link real do Google Forms
+const SURVEY_URL = "https://forms.gle/your-form-link-here";
 
 export function LeadForm() {
   const [loading, setLoading] = useState(false);
@@ -17,7 +20,7 @@ export function LeadForm() {
       setLoading(false);
       setDone(true);
       toast.success("Você está na lista!", {
-        description: "Entraremos em contato com seu acesso prioritário em breve.",
+        description: "Confira seu próximo passo abaixo.",
       });
     }, 900);
   };
@@ -27,22 +30,24 @@ export function LeadForm() {
       <div className="absolute inset-0 pointer-events-none" style={{ background: "var(--gradient-hero)" }} />
 
       <div className="relative mx-auto max-w-2xl px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-10"
-        >
-          <p className="text-xs uppercase tracking-[0.2em] text-[var(--gold)] mb-3">Beta fechada</p>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight">
-            Assuma o controle dos seus <span className="text-gradient-gold italic">contratos</span>.
-          </h2>
-          <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-            O JusMind está atualmente em fase beta fechada. Inscreva-se para garantir seu lugar na
-            lista de espera e receber acesso prioritário.
-          </p>
-        </motion.div>
+        {!done && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-10"
+          >
+            <p className="text-xs uppercase tracking-[0.2em] text-[var(--gold)] mb-3">Beta fechada</p>
+            <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight">
+              Assuma o controle dos seus <span className="text-gradient-gold italic">contratos</span>.
+            </h2>
+            <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
+              O JusMind está atualmente em fase beta fechada. Inscreva-se para garantir seu lugar na
+              lista de espera e receber acesso prioritário.
+            </p>
+          </motion.div>
+        )}
 
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
@@ -54,19 +59,49 @@ export function LeadForm() {
           <div className="absolute -top-32 -right-32 h-64 w-64 rounded-full bg-[var(--gold)]/10 blur-3xl pointer-events-none" />
 
           {done ? (
-            <div className="text-center py-8 relative">
-              <div className="mx-auto h-14 w-14 rounded-full bg-[var(--risk-low)]/15 border border-[var(--risk-low)]/40 flex items-center justify-center mb-4">
-                <CheckCircle2 className="h-7 w-7 text-[var(--risk-low)]" />
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center py-4 relative"
+            >
+              <div className="mx-auto mb-5 inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs font-medium">
+                <Sparkles className="h-3.5 w-3.5 text-[var(--gold)]" />
+                <span>Lista de espera confirmada</span>
               </div>
-              <h3 className="font-display text-2xl font-semibold mb-2">Inscrição confirmada</h3>
-              <p className="text-muted-foreground text-sm">
-                Você receberá seu convite de acesso por e-mail em breve.
+
+              <h3 className="font-display text-3xl md:text-4xl font-semibold mb-4 tracking-tight">
+                Inscrição Confirmada! <span className="inline-block">🎉</span>
+              </h3>
+              <p className="text-muted-foreground max-w-md mx-auto leading-relaxed">
+                Você acaba de entrar para a lista de espera. Quer{" "}
+                <span className="text-foreground font-medium">furar a fila</span> e ganhar{" "}
+                <span className="text-[var(--gold)] font-semibold">6 meses de acesso gratuito</span>{" "}
+                no lançamento?
               </p>
-            </div>
+
+              <div className="mt-8 relative inline-block group">
+                {/* Glow ring */}
+                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[var(--gold)] via-[var(--gold-soft)] to-[var(--gold)] opacity-60 blur-lg group-hover:opacity-100 transition-opacity animate-pulse" />
+                <Button
+                  asChild
+                  className="relative h-13 px-7 py-3 bg-background border-2 border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-[var(--primary-foreground)] font-semibold text-base shadow-[var(--shadow-gold)] transition-colors"
+                >
+                  <a href={SURVEY_URL} target="_blank" rel="noopener noreferrer">
+                    Responder Pesquisa de Diagnóstico (2 min)
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
+
+              <p className="mt-5 text-xs text-muted-foreground">
+                Leva menos de 2 minutos · Suas respostas moldam o produto
+              </p>
+            </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5 relative">
               <div className="space-y-2">
-                <Label htmlFor="name" className="text-sm">Nome Completo</Label>
+                <Label htmlFor="name" className="text-sm">Nome</Label>
                 <Input
                   id="name"
                   required
@@ -86,16 +121,6 @@ export function LeadForm() {
                 />
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="role" className="text-sm">Cargo / Profissão</Label>
-                <Input
-                  id="role"
-                  required
-                  placeholder="Advogado, CEO, Founder..."
-                  className="h-12 bg-white/5 border-white/10 focus-visible:border-[var(--gold)]/50 focus-visible:ring-[var(--gold)]/20"
-                />
-              </div>
-
               <Button
                 type="submit"
                 disabled={loading}
@@ -103,7 +128,7 @@ export function LeadForm() {
               >
                 {loading ? "Enviando..." : (
                   <>
-                    Entrar para a Lista de Espera
+                    Garantir Acesso Antecipado
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </>
                 )}

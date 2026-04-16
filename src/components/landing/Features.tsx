@@ -1,26 +1,21 @@
 import { motion } from "framer-motion";
-import { Zap, TrafficCone, SearchCheck, FileBarChart } from "lucide-react";
+import { FileWarning, Clock, ShieldCheck } from "lucide-react";
 
 const features = [
   {
-    icon: Zap,
-    title: "Leitura Integral",
-    desc: 'Esqueça o "skimming". O JusMind lê todas as páginas, anexos e letras miúdas.',
+    icon: FileWarning,
+    title: "Chega de letras miúdas",
+    desc: "Detectamos armadilhas escondidas em contratos de 50+ páginas — nada passa despercebido.",
   },
   {
-    icon: TrafficCone,
-    title: "Matriz de Risco",
-    desc: "Identificação instantânea de Deal Breakers (Alto), Pontos de Atenção (Médio) e Cláusulas Padrão.",
+    icon: Clock,
+    title: "Economize horas de revisão",
+    desc: "Vá direto aos pontos críticos sem precisar ler tudo palavra por palavra.",
   },
   {
-    icon: SearchCheck,
-    title: "Detector de Omissões",
-    desc: "Descubra não apenas o que está ruim, mas o que falta no contrato para blindar sua empresa.",
-  },
-  {
-    icon: FileBarChart,
-    title: "Relatório Executivo",
-    desc: 'Saída padronizada, direta ao ponto, focada no negócio — não em "juridiquês".',
+    icon: ShieldCheck,
+    title: "Segurança para o CEO",
+    desc: "Identificamos omissões graves (como falta de multa ou cláusula de rescisão) que podem custar caro.",
   },
 ];
 
@@ -29,13 +24,13 @@ export function Features() {
     <section id="features" className="relative py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-2xl mb-16">
-          <p className="text-xs uppercase tracking-[0.2em] text-[var(--gold)] mb-3">Capabilities</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[var(--gold)] mb-3">Por que JusMind</p>
           <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
-            Engenharia jurídica de <span className="text-gradient-gold italic">elite</span>, automatizada.
+            Os problemas que <span className="text-gradient-gold italic">resolvemos</span> por você.
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((f, i) => (
             <motion.div
               key={f.title}
