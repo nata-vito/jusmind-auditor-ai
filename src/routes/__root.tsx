@@ -31,6 +31,12 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "JusMind" },
       { name: "description", content: "Auditoria contratual com IA" },
+      { property: "og:title", content: "JusMind" },
+      { name: "twitter:title", content: "JusMind" },
+      { property: "og:description", content: "Auditoria contratual com IA" },
+      { name: "twitter:description", content: "Auditoria contratual com IA" },
+      { name: "twitter:card", content: "summary" },
+      { property: "og:type", content: "website" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
