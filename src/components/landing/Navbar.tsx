@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const SECTIONS = ["features", "how"] as const;
 
 export function Navbar() {
-  const [activeSection, setActiveSection] = useState<string>("hero");
+  const [activeSection, setActiveSection] = useState<string>("");
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
