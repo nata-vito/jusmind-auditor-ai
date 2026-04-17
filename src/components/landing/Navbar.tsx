@@ -13,23 +13,28 @@ export function Navbar() {
   };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-        if (visible[0]) setActiveSection(visible[0].target.id);
-        else setActiveSection("");
-      },
-      { rootMargin: "-40% 0px -50% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] },
-    );
+    const detect = () => {
+      const probe = window.innerHeight * 0.3; // linha de referência
+      let current = "";
+      for (const id of SECTIONS) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= probe && rect.bottom > probe) {
+          current = id;
+          break;
+        }
+      }
+      setActiveSection(current);
+    };
 
-    SECTIONS.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
+    detect();
+    window.addEventListener("scroll", detect, { passive: true });
+    window.addEventListener("resize", detect);
+    return () => {
+      window.removeEventListener("scroll", detect);
+      window.removeEventListener("resize", detect);
+    };
   }, []);
 
   return (
@@ -50,8 +55,8 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center gap-2 text-sm">
             {[
-              { id: "features", label: "Features" },
-              { id: "how", label: "How it Works" },
+              { id: "features", label: "O Problema" },
+              { id: "how", label: "Como Funciona" },
               { id: "lead", label: "Acesso Antecipado" },
             ].map((item) => {
               const isActive = activeSection === item.id;
