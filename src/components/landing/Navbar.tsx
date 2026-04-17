@@ -9,7 +9,7 @@ export function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="mx-auto mt-4 max-w-6xl px-4">
-        <nav className="glass flex items-center justify-between rounded-2xl px-5 py-3">
+        <nav className="flex items-center justify-between rounded-2xl px-5 py-3 border border-white/10 bg-background/60 backdrop-blur-xl backdrop-saturate-150 shadow-lg supports-[backdrop-filter]:bg-background/40">
           <button
             onClick={() => scrollTo("hero")}
             className="flex items-center gap-2 group"
