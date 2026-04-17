@@ -59,10 +59,10 @@ export function Navbar() {
                   key={item.id}
                   onClick={() => scrollTo(item.id)}
                   className={cn(
-                    "relative px-3 py-1.5 rounded-full transition-colors",
+                    "px-2 py-1 transition-all",
                     isActive
-                      ? "text-foreground bg-white/5 border border-[var(--gold)]/30 shadow-[0_0_20px_-8px_var(--gold)]"
-                      : "text-muted-foreground hover:text-foreground border border-transparent",
+                      ? "text-white font-semibold [text-shadow:0_0_12px_var(--gold),0_0_24px_color-mix(in_oklab,var(--gold)_40%,transparent)]"
+                      : "text-muted-foreground hover:text-foreground",
                   )}
                 >
                   {item.label}
