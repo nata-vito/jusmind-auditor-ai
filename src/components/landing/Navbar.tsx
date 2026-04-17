@@ -3,7 +3,7 @@ import { Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const SECTIONS = ["hero", "features", "how", "lead"] as const;
+const SECTIONS = ["features", "how"] as const;
 
 export function Navbar() {
   const [activeSection, setActiveSection] = useState<string>("hero");
