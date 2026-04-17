@@ -6,8 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-// TODO: substituir pelo link real do Google Forms
-const SURVEY_URL = "https://forms.gle/your-form-link-here";
+const SURVEY_URL = "https://tally.so/r/D4vdRl";
 
 export function LeadForm() {
   const [loading, setLoading] = useState(false);
