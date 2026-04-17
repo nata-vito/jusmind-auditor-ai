@@ -47,10 +47,28 @@ export function Navbar() {
             </span>
           </button>
 
-          <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-            <button onClick={() => scrollTo("features")} className="hover:text-foreground transition-colors">Features</button>
-            <button onClick={() => scrollTo("how")} className="hover:text-foreground transition-colors">How it Works</button>
-            <button onClick={() => scrollTo("pricing")} className="hover:text-foreground transition-colors">Pricing</button>
+          <div className="hidden md:flex items-center gap-2 text-sm">
+            {[
+              { id: "features", label: "Features" },
+              { id: "how", label: "How it Works" },
+              { id: "pricing", label: "Pricing" },
+            ].map((item) => {
+              const isActive = activeSection === item.id;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => scrollTo(item.id)}
+                  className={cn(
+                    "relative px-3 py-1.5 rounded-full transition-colors",
+                    isActive
+                      ? "text-foreground bg-white/5 border border-[var(--gold)]/30 shadow-[0_0_20px_-8px_var(--gold)]"
+                      : "text-muted-foreground hover:text-foreground border border-transparent",
+                  )}
+                >
+                  {item.label}
+                </button>
+              );
+            })}
           </div>
 
           <Button
