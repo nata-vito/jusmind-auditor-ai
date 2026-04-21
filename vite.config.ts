@@ -7,10 +7,14 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [
-    cloudflare(),
+    cloudflare({ viteEnvironment: { name: 'ssr' } }),
     tsconfigPaths(),
     tailwindcss(),
-    tanstackStart(),
+    tanstackStart({
+      ssr: {
+        platform: 'cloudflare'
+      }
+    }),
     react(),
   ],
 });
