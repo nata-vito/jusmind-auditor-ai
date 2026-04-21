@@ -1,0 +1,823 @@
+{
+    "wallTime": 12,
+    "cpuTime": 7,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "08a52b67-d4ed-412b-b12d-e6dc37138e1a"
+    },
+    "scriptName": "tanstack-start-app",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [
+        {
+            "message": [
+                {
+                    "status": 500,
+                    "unhandled": true,
+                    "message": "HTTPError"
+                }
+            ],
+            "level": "error",
+            "timestamp": 1776814595737
+        }
+    ],
+    "eventTimestamp": 1776814595666,
+    "event": {
+        "request": {
+            "url": "https://tanstack-start-app.jusmind.workers.dev/",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f",
+                "cf-ipcountry": "BR",
+                "cf-ray": "9f003636d8ca196f",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "tanstack-start-app.jusmind.workers.dev",
+                "user-agent": "curl/7.68.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 6,
+                "clientQuicRtt": 0,
+                "colo": "GRU",
+                "asn": 61792,
+                "asOrganization": "IPNET TELECOMUNICACOES LTDA",
+                "country": "BR",
+                "isEUCountry": false,
+                "city": "Votorantim",
+                "continent": "SA",
+                "region": "São Paulo",
+                "regionCode": "SP",
+                "timezone": "America/Sao_Paulo",
+                "longitude": "-47.43778",
+                "latitude": "-23.54667",
+                "postalCode": "18110-000",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "lWLOa3q+U3BgPew2Pl8fy+CjTybrGOWbdh9tAHg9Nok=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "bJfDPn82Ud8taZ6+PSOSubkqDGs=",
+                "tlsClientExtensionsSha1Le": "7zIpdDU5pvFPPBI2/PCzqbaXnRA=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "d3d6aa5498e143c38aa510ce20d611bf88b663d1c48a3e97892a3c6e0e9bf0eb0c40ace3b36f6028971eb7d9a7c6957a",
+                    "serverHandshake": "0f0e5697f4a7e22bb846c2e6e05b1c091250c9deeb3af8c7ea4a6555645109d8b8c6308471f357d4391ba91cf873a6e9",
+                    "clientFinished": "ac94705856c3514cb2cb6fb0e280c5b97e8b0b9fc33b7eb60a39e08e95653fb11097064dc819aeb1e13ae72fa855979e",
+                    "serverFinished": "f5d18f78d724817914917cfc1d447e094b7c3131c58f5cb8a91be6505b3815465b63a2914cc543ed26fc443774443499"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 382845
+                }
+            }
+        },
+        "response": {
+            "status": 500
+        }
+    }
+}
+{
+    "wallTime": 63,
+    "cpuTime": 57,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "f39ecc47-8612-403a-b3c0-3909aa992bc1"
+    },
+    "scriptName": "tanstack-start-app",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1776814784964,
+    "event": {
+        "request": {
+            "url": "https://tanstack-start-app.jusmind.workers.dev/",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f",
+                "cf-ipcountry": "BR",
+                "cf-ray": "9f003ad5efe30ad0",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "tanstack-start-app.jusmind.workers.dev",
+                "user-agent": "curl/7.68.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 6,
+                "clientQuicRtt": 0,
+                "colo": "GRU",
+                "asn": 61792,
+                "asOrganization": "IPNET TELECOMUNICACOES LTDA",
+                "country": "BR",
+                "isEUCountry": false,
+                "city": "Votorantim",
+                "continent": "SA",
+                "region": "São Paulo",
+                "regionCode": "SP",
+                "timezone": "America/Sao_Paulo",
+                "longitude": "-47.43778",
+                "latitude": "-23.54667",
+                "postalCode": "18110-000",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "iYQP3z/xwBP6fXgteXP9Xv4O3wpkjlgNC+hQ6pDUKXQ=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "bJfDPn82Ud8taZ6+PSOSubkqDGs=",
+                "tlsClientExtensionsSha1Le": "7zIpdDU5pvFPPBI2/PCzqbaXnRA=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "a52722a98f3dbdfd0582b621546360175d721757e0ef5b43807b7af7cd3597f7e0ce32d41341029a61ecdae8e6cde2b0",
+                    "serverHandshake": "344c518f2291a738a6c260bc504a3cf30bea75f830d630c8f847e74ca76aa2bb1166a31a8dfe61e76de249965d667502",
+                    "clientFinished": "f67c4e13477c620105c770b3f82e0a1eb90aac5ea283577cf74a9c56c2dbafae0b5214fa7328729c188d7cfb5a0803ea",
+                    "serverFinished": "7e21abfe32ffe2e781cf265323b7db1b9dd70cce42cb796e00117126825fb0efe1808cb57fa88d7d793ca154aef15b31"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 391348
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 12,
+    "cpuTime": 8,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "f39ecc47-8612-403a-b3c0-3909aa992bc1"
+    },
+    "scriptName": "tanstack-start-app",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1776814823936,
+    "event": {
+        "request": {
+            "url": "https://tanstack-start-app.jusmind.workers.dev/",
+            "method": "GET",
+            "headers": {
+                "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                "accept-encoding": "gzip, br",
+                "accept-language": "en-US,en;q=0.9,pt;q=0.8",
+                "cf-connecting-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f",
+                "cf-ipcountry": "BR",
+                "cf-ray": "9f003bc98d03b1fc",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "cookie": "REDACTED",
+                "host": "tanstack-start-app.jusmind.workers.dev",
+                "priority": "u=0, i",
+                "sec-ch-ua": "\"Google Chrome\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"Linux\"",
+                "sec-fetch-dest": "document",
+                "sec-fetch-mode": "navigate",
+                "sec-fetch-site": "cross-site",
+                "sec-fetch-user": "?1",
+                "upgrade-insecure-requests": "1",
+                "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/3",
+                "clientAcceptEncoding": "gzip, deflate, br",
+                "requestPriority": "",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 0,
+                "clientQuicRtt": 6,
+                "colo": "GRU",
+                "asn": 61792,
+                "asOrganization": "IPNET TELECOMUNICACOES LTDA",
+                "country": "BR",
+                "isEUCountry": false,
+                "city": "Votorantim",
+                "continent": "SA",
+                "region": "São Paulo",
+                "regionCode": "SP",
+                "timezone": "America/Sao_Paulo",
+                "longitude": "-47.43778",
+                "latitude": "-23.54667",
+                "postalCode": "18110-000",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES128-GCM-SHA256",
+                "tlsClientRandom": "HY7uA+mIjNN8HngRKH0dJ0NghvwGL9tlx04oQ0jKw9o=",
+                "tlsClientCiphersSha1": "3HTt3+R/6BL3zeALJDSq0pR1yOQ=",
+                "tlsClientExtensionsSha1": "hC0zOxsUm04Yd+JGOxRV4YMDoFk=",
+                "tlsClientExtensionsSha1Le": "wSgxY+73RLjh03gxD1Wdn680S/U=",
+                "tlsClientHelloLength": "1948",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 217535
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 43,
+    "cpuTime": 38,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "f39ecc47-8612-403a-b3c0-3909aa992bc1"
+    },
+    "scriptName": "tanstack-start-app",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1776814967428,
+    "event": {
+        "request": {
+            "url": "https://tanstack-start-app.jusmind.workers.dev/",
+            "method": "GET",
+            "headers": {
+                "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                "accept-encoding": "gzip, br",
+                "accept-language": "en-US,en;q=0.9,pt;q=0.8",
+                "cache-control": "no-cache",
+                "cf-connecting-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f",
+                "cf-ipcountry": "BR",
+                "cf-ray": "9f003f4a5a4bf1e9",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "cookie": "REDACTED",
+                "host": "tanstack-start-app.jusmind.workers.dev",
+                "pragma": "no-cache",
+                "priority": "u=0, i",
+                "sec-ch-ua": "\"Google Chrome\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"Linux\"",
+                "sec-fetch-dest": "document",
+                "sec-fetch-mode": "navigate",
+                "sec-fetch-site": "same-origin",
+                "sec-fetch-user": "?1",
+                "upgrade-insecure-requests": "1",
+                "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/3",
+                "clientAcceptEncoding": "gzip, deflate, br",
+                "requestPriority": "",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 0,
+                "clientQuicRtt": 9,
+                "colo": "GRU",
+                "asn": 61792,
+                "asOrganization": "IPNET TELECOMUNICACOES LTDA",
+                "country": "BR",
+                "isEUCountry": false,
+                "city": "Votorantim",
+                "continent": "SA",
+                "region": "São Paulo",
+                "regionCode": "SP",
+                "timezone": "America/Sao_Paulo",
+                "longitude": "-47.43778",
+                "latitude": "-23.54667",
+                "postalCode": "18110-000",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES128-GCM-SHA256",
+                "tlsClientRandom": "yIWXxrJNiTXYljNiZ0UTURacIridGEGpidrbyhOY3Uc=",
+                "tlsClientCiphersSha1": "3HTt3+R/6BL3zeALJDSq0pR1yOQ=",
+                "tlsClientExtensionsSha1": "aYwVf8Fk1DES+TKVxNTPQ9aLKzw=",
+                "tlsClientExtensionsSha1Le": "JJsGpI+w8vqOg7zbp8BIY54jy+w=",
+                "tlsClientHelloLength": "1750",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 123411
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 16,
+    "cpuTime": 12,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "f39ecc47-8612-403a-b3c0-3909aa992bc1"
+    },
+    "scriptName": "tanstack-start-app",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1776814971087,
+    "event": {
+        "request": {
+            "url": "https://tanstack-start-app.jusmind.workers.dev/",
+            "method": "GET",
+            "headers": {
+                "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                "accept-encoding": "gzip, br",
+                "accept-language": "en-US,en;q=0.9,pt;q=0.8",
+                "cache-control": "no-cache",
+                "cf-connecting-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f",
+                "cf-ipcountry": "BR",
+                "cf-ray": "9f003f614ee3f1e9",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "cookie": "REDACTED",
+                "host": "tanstack-start-app.jusmind.workers.dev",
+                "pragma": "no-cache",
+                "priority": "u=0, i",
+                "sec-ch-ua": "\"Google Chrome\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"Linux\"",
+                "sec-fetch-dest": "document",
+                "sec-fetch-mode": "navigate",
+                "sec-fetch-site": "same-origin",
+                "sec-fetch-user": "?1",
+                "upgrade-insecure-requests": "1",
+                "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/3",
+                "clientAcceptEncoding": "gzip, deflate, br",
+                "requestPriority": "",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 0,
+                "clientQuicRtt": 12,
+                "colo": "GRU",
+                "asn": 61792,
+                "asOrganization": "IPNET TELECOMUNICACOES LTDA",
+                "country": "BR",
+                "isEUCountry": false,
+                "city": "Votorantim",
+                "continent": "SA",
+                "region": "São Paulo",
+                "regionCode": "SP",
+                "timezone": "America/Sao_Paulo",
+                "longitude": "-47.43778",
+                "latitude": "-23.54667",
+                "postalCode": "18110-000",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES128-GCM-SHA256",
+                "tlsClientRandom": "yIWXxrJNiTXYljNiZ0UTURacIridGEGpidrbyhOY3Uc=",
+                "tlsClientCiphersSha1": "3HTt3+R/6BL3zeALJDSq0pR1yOQ=",
+                "tlsClientExtensionsSha1": "aYwVf8Fk1DES+TKVxNTPQ9aLKzw=",
+                "tlsClientExtensionsSha1Le": "JJsGpI+w8vqOg7zbp8BIY54jy+w=",
+                "tlsClientHelloLength": "1750",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 6979039
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 61,
+    "cpuTime": 56,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "f39ecc47-8612-403a-b3c0-3909aa992bc1"
+    },
+    "scriptName": "tanstack-start-app",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1776815017488,
+    "event": {
+        "request": {
+            "url": "https://tanstack-start-app.jusmind.workers.dev/",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                "cf-connecting-ip": "2804:1964:419:ec00:4461:ddef:9a03:3a0f",
+                "cf-ipcountry": "BR",
+                "cf-ray": "9f0040832c741d32",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "tanstack-start-app.jusmind.workers.dev",
+                "priority": "u=3, i",
+                "range": "bytes=0-99999",
+                "user-agent": "WhatsApp/2.23.20.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "2804:1964:419:ec00:4461:ddef:9a03:3a0f"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/3",
+                "clientAcceptEncoding": "gzip, deflate, br",
+                "requestPriority": "",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 0,
+                "clientQuicRtt": 8,
+                "colo": "GRU",
+                "asn": 61792,
+                "asOrganization": "IPNET TELECOMUNICACOES LTDA",
+                "country": "BR",
+                "isEUCountry": false,
+                "city": "Votorantim",
+                "continent": "SA",
+                "region": "São Paulo",
+                "regionCode": "SP",
+                "timezone": "America/Sao_Paulo",
+                "longitude": "-47.43778",
+                "latitude": "-23.54667",
+                "postalCode": "18110-000",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "s5jm85Xcbv7qmlvCRlcfyQujofIGpGGmnLx9hZhh2kE=",
+                "tlsClientCiphersSha1": "y5ZhVnxGEmti26aQkFOtbKdXxyo=",
+                "tlsClientExtensionsSha1": "3vPPrgOjac3gQ+3p6V3MO8SjA1E=",
+                "tlsClientExtensionsSha1Le": "zxzM7Cs4J9caJ8wlfkxcP1rVsTg=",
+                "tlsClientHelloLength": "1507",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 431165
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 8,
+    "cpuTime": 7,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "f39ecc47-8612-403a-b3c0-3909aa992bc1"
+    },
+    "scriptName": "tanstack-start-app",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1776815017676,
+    "event": {
+        "request": {
+            "url": "https://tanstack-start-app.jusmind.workers.dev/favicon.ico",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                "cf-connecting-ip": "2804:1964:419:ec00:4461:ddef:9a03:3a0f",
+                "cf-ipcountry": "BR",
+                "cf-ray": "9f0040846c871d32",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "tanstack-start-app.jusmind.workers.dev",
+                "priority": "u=3, i",
+                "range": "bytes=0-30719",
+                "user-agent": "WhatsApp/2.23.20.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "2804:1964:419:ec00:4461:ddef:9a03:3a0f"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/3",
+                "clientAcceptEncoding": "gzip, deflate, br",
+                "requestPriority": "",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 0,
+                "clientQuicRtt": 10,
+                "colo": "GRU",
+                "asn": 61792,
+                "asOrganization": "IPNET TELECOMUNICACOES LTDA",
+                "country": "BR",
+                "isEUCountry": false,
+                "city": "Votorantim",
+                "continent": "SA",
+                "region": "São Paulo",
+                "regionCode": "SP",
+                "timezone": "America/Sao_Paulo",
+                "longitude": "-47.43778",
+                "latitude": "-23.54667",
+                "postalCode": "18110-000",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "s5jm85Xcbv7qmlvCRlcfyQujofIGpGGmnLx9hZhh2kE=",
+                "tlsClientCiphersSha1": "y5ZhVnxGEmti26aQkFOtbKdXxyo=",
+                "tlsClientExtensionsSha1": "3vPPrgOjac3gQ+3p6V3MO8SjA1E=",
+                "tlsClientExtensionsSha1Le": "zxzM7Cs4J9caJ8wlfkxcP1rVsTg=",
+                "tlsClientHelloLength": "1507",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 431165
+                }
+            }
+        },
+        "response": {
+            "status": 404
+        }
+    }
+}
+{
+    "wallTime": 192,
+    "cpuTime": 4,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "f39ecc47-8612-403a-b3c0-3909aa992bc1"
+    },
+    "scriptName": "tanstack-start-app",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1776815084766,
+    "event": {
+        "request": {
+            "url": "https://tanstack-start-app.jusmind.workers.dev/_serverFn/REDACTED",
+            "method": "POST",
+            "headers": {
+                "accept": "application/x-tss-framed, application/x-ndjson, application/json",
+                "accept-encoding": "gzip, br",
+                "accept-language": "en-US,en;q=0.9,pt;q=0.8",
+                "cf-connecting-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f",
+                "cf-ipcountry": "BR",
+                "cf-ray": "9f0042279d5a8770",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "content-length": "228",
+                "content-type": "application/json",
+                "cookie": "REDACTED",
+                "host": "tanstack-start-app.jusmind.workers.dev",
+                "origin": "https://tanstack-start-app.jusmind.workers.dev",
+                "priority": "u=1, i",
+                "referer": "https://tanstack-start-app.jusmind.workers.dev/",
+                "sec-ch-ua": "\"Google Chrome\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"Linux\"",
+                "sec-fetch-dest": "empty",
+                "sec-fetch-mode": "cors",
+                "sec-fetch-site": "same-origin",
+                "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "2804:1964:419:ec00:eb85:a7e2:5af9:a18f",
+                "x-tsr-serverfn": "true"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/3",
+                "clientAcceptEncoding": "gzip, deflate, br",
+                "requestPriority": "",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 0,
+                "clientQuicRtt": 7,
+                "colo": "GRU",
+                "asn": 61792,
+                "asOrganization": "IPNET TELECOMUNICACOES LTDA",
+                "country": "BR",
+                "isEUCountry": false,
+                "city": "Votorantim",
+                "continent": "SA",
+                "region": "São Paulo",
+                "regionCode": "SP",
+                "timezone": "America/Sao_Paulo",
+                "longitude": "-47.43778",
+                "latitude": "-23.54667",
+                "postalCode": "18110-000",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES128-GCM-SHA256",
+                "tlsClientRandom": "XMs+EIJCeH8AZ8Ny9YecsNjvSXjr15/FNPJUyriF2yg=",
+                "tlsClientCiphersSha1": "3HTt3+R/6BL3zeALJDSq0pR1yOQ=",
+                "tlsClientExtensionsSha1": "MBSTEUmLkX9naxl8U6V6lmzZB0I=",
+                "tlsClientExtensionsSha1Le": "8IqrM6VHdQCzFYRzIysO60vL7PI=",
+                "tlsClientHelloLength": "1760",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 171760
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}

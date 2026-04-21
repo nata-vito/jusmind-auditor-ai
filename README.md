@@ -59,6 +59,24 @@ Siga os passos abaixo para rodar o projeto na sua máquina em menos de 2 minutos
 4. **Acesse no navegador**
    Abra `http://localhost:5173` (ou a porta informada no seu terminal).
 
+## ☁️ Deploy (Cloudflare Workers)
+
+Este projeto está pré-configurado para rodar no **Cloudflare Workers** utilizando SSR (Server-Side Rendering) com TanStack Start.
+
+### Configuração Crítica do Build (Erro 500)
+Aplicações TanStack Start precisam de um **Adapter** para compilar corretamente para Edge Computing. No arquivo `vite.config.ts`, a plataforma **DEVE** estar explicitamente definida para `cloudflare` para evitar erros genéricos `HTTPError 500` em produção:
+```typescript
+tanstackStart({
+  ssr: { platform: 'cloudflare' }
+})
+```
+
+### Como fazer o deploy
+1. Faça login via CLI: `npx wrangler login`
+2. Rode o atalho de deploy: `npm run deploy`
+   *(Este comando automaticamente roda o `npm run build` antes de acionar o `wrangler deploy`)*
+3. Acesse a URL gerada pelo Wrangler (ex: `https://tanstack-start-app.<seu-subdominio>.workers.dev`).
+
 ## 🔗 Integração do Formulário de Leads (Webhook)
 
 O formulário de captura de leads na Landing Page (`src/components/landing/LeadForm.tsx`) não requer um backend próprio. Ele está integrado ao Make.com.
