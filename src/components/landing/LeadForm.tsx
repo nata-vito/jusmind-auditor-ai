@@ -11,17 +11,42 @@ const SURVEY_URL = "https://tally.so/r/D4vdRl";
 export function LeadForm() {
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+
+    try {
+      // 🔴 IMPORTANTE: Substitua esta URL pela sua URL do Webhook do Make.com
+      const WEBHOOK_URL = "https://hook.us2.make.com/7ym9ndd49rg6jdcj0us6r8fx43gj4qv7";
+      
+      if (WEBHOOK_URL.includes("SUA_CHAVE")) {
+        // Modo de demonstração (se a URL não foi configurada ainda)
+        await new Promise(resolve => setTimeout(resolve, 900));
+        console.warn("Webhook não configurado. Simulando envio de:", { name, email });
+      } else {
+        // Envio real para o Webhook
+        await fetch(WEBHOOK_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, source: "JusMind MVP" }),
+        });
+      }
+
       setLoading(false);
       setDone(true);
       toast.success("Você está na lista!", {
         description: "Confira seu próximo passo abaixo.",
       });
-    }, 900);
+    } catch (error) {
+      console.error(error);
+      setLoading(false);
+      toast.error("Erro ao enviar", {
+        description: "Ocorreu um erro. Por favor, tente novamente.",
+      });
+    }
   };
 
   return (
@@ -75,7 +100,7 @@ export function LeadForm() {
               <p className="text-muted-foreground max-w-md mx-auto leading-relaxed">
                 Você acaba de entrar para a lista de espera. Quer{" "}
                 <span className="text-foreground font-medium">furar a fila</span> e ganhar{" "}
-                <span className="text-[var(--gold)] font-semibold">6 meses de acesso gratuito</span>{" "}
+                <span className="text-[var(--gold)] font-semibold">10 análises completas de contratos (100% gratuitas)</span>{" "}
                 no lançamento?
               </p>
 
@@ -105,6 +130,8 @@ export function LeadForm() {
                   id="name"
                   required
                   placeholder="Maria Silva"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="h-12 bg-white/5 border-white/10 focus-visible:border-[var(--gold)]/50 focus-visible:ring-[var(--gold)]/20"
                 />
               </div>
@@ -116,6 +143,8 @@ export function LeadForm() {
                   type="email"
                   required
                   placeholder="maria@empresa.com.br"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="h-12 bg-white/5 border-white/10 focus-visible:border-[var(--gold)]/50 focus-visible:ring-[var(--gold)]/20"
                 />
               </div>

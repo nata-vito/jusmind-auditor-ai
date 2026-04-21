@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "JusMind — Auditoria Contratual com IA. Em Segundos." },
+      { title: "JusMind" },
       {
         name: "description",
         content:
