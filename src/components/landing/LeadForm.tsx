@@ -5,6 +5,7 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { submitLead } from "@/server/lead.functions";
 
 const SURVEY_URL = "https://tally.so/r/D4vdRl";
 
@@ -19,21 +20,8 @@ export function LeadForm() {
     setLoading(true);
 
     try {
-      // 🔴 IMPORTANTE: Substitua esta URL pela sua URL do Webhook do Make.com
-      const WEBHOOK_URL = "https://hook.us2.make.com/7ym9ndd49rg6jdcj0us6r8fx43gj4qv7";
-      
-      if (WEBHOOK_URL.includes("SUA_CHAVE")) {
-        // Modo de demonstração (se a URL não foi configurada ainda)
-        await new Promise(resolve => setTimeout(resolve, 900));
-        console.warn("Webhook não configurado. Simulando envio de:", { name, email });
-      } else {
-        // Envio real para o Webhook
-        await fetch(WEBHOOK_URL, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, source: "JusMind MVP" }),
-        });
-      }
+      // Envio real seguro (processado apenas no Backend)
+      await submitLead({ data: { name, email, source: "JusMind MVP" } });
 
       setLoading(false);
       setDone(true);
