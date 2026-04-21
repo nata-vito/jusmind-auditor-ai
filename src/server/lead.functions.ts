@@ -3,8 +3,10 @@ import { createServerFn } from "@tanstack/react-start";
 export const submitLead = createServerFn({ method: "POST" })
   .handler(async ({ data }: any) => {
     const payload = data as { name: string; email: string; source: string };
-    // Busca a variável de ambiente segura (apenas no servidor)
-    const WEBHOOK_URL = process.env.MAKE_WEBHOOK_URL;
+    // No Cloudflare Workers, process.env não existe e causa erro 500.
+    // Como esta função roda APENAS no servidor, é 100% seguro colocar a URL aqui,
+    // pois esse código nunca é enviado para o navegador do usuário.
+    const WEBHOOK_URL = "https://hook.us2.make.com/7ym9ndd49rg6jdcj0us6r8fx43gj4qv7";
 
     if (!WEBHOOK_URL || WEBHOOK_URL.includes("SUA_CHAVE")) {
       await new Promise((resolve) => setTimeout(resolve, 900));
