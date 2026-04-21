@@ -1,8 +1,8 @@
 import { createServerFn } from "@tanstack/react-start";
 
 export const submitLead = createServerFn({ method: "POST" })
-  .validator((data: { name: string; email: string; source: string }) => data)
-  .handler(async ({ data }) => {
+  .handler(async ({ data }: any) => {
+    const payload = data as { name: string; email: string; source: string };
     // Busca a variável de ambiente segura (apenas no servidor)
     const WEBHOOK_URL = process.env.MAKE_WEBHOOK_URL;
 
@@ -16,7 +16,7 @@ export const submitLead = createServerFn({ method: "POST" })
       const response = await fetch(WEBHOOK_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify(payload),
       });
       if (!response.ok) throw new Error("Falha na resposta do Webhook");
       
