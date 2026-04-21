@@ -21,7 +21,7 @@ O **JusMind** é uma plataforma SaaS (Software as a Service) voltada para a audi
 
 ## 🛠 Tecnologias Utilizadas
 
-A stack foi escolhida sob a arquitetura *Antigravity Kit* para oferecer performance máxima, código limpo e facilidade de deploy:
+A stack foi escolhida sob a arquitetura *Antigravity Kit* parabr oferecer performance máxima, código limpo e facilidade de deploy:
 
 - **Framework Core:** React 19 + Vite
 - **Roteamento Avançado:** @tanstack/react-start & @tanstack/react-router
@@ -87,10 +87,21 @@ Para testar a integração:
 
 ## 🤝 Roadmap & Próximos Passos (Fase 2)
 
-Após a validação bem-sucedida do mercado, o desenvolvimento avançará para:
-- Conexão com Supabase/Firebase para autenticação de usuários e banco de dados relacional.
-- Integração direta com a API de Inteligência Artificial (OpenAI/Anthropic/Gemini) para o motor de análise real dos PDFs contratuais.
-- Criação das rotas privadas e do Painel do Auditor (Dashboard real).
+Após a validação bem-sucedida do mercado, o desenvolvimento avançará para as rotas privadas e o painel de uso da inteligência artificial.
+
+### Arquitetura do Backoffice (Admin)
+O painel administrativo adotará o modelo **"AI Ops & QA Center"** mesclado com a gestão comercial. O objetivo é focar primeiramente em garantir a precisão da IA (Big Law Quality), não apenas faturamento corporativo.
+
+**Módulos Planejados:**
+- **Monitoramento IA (Live):** Visão em tempo real de contratos sendo processados, latência da API e consumo de tokens/custos.
+- **Audit Trails (Raio-X de Auditorias):** Histórico detalhado para inspecionar exatamente quais cláusulas a IA marcou como risco e como ela tomou a decisão.
+- **Feedback Loop (QA):** Painel de revisão de auditorias onde o cliente relatou falta de precisão, usado para calibrar o modelo.
+- **Laboratório de Prompts:** Ambiente de homologação interno para testar novas "regras de auditoria" antes do deploy para clientes.
+- **Leads & Usuários:** Módulo tradicional (sidebar) para gerenciar acessos, faturamento e converter os leads da fase Beta.
+
+### Infraestrutura
+- **Banco de Dados:** Conexão com Supabase (PostgreSQL) para gerenciar o estado das auditorias e usuários.
+- **Integração IA:** Conexão direta com APIs (OpenAI/Anthropic) para o motor de análise profunda dos contratos (substituindo a automação do MVP).
 
 ---
 <div align="center">
